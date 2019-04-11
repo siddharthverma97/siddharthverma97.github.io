@@ -1,0 +1,315 @@
+.navbar {
+    margin-bottom: 0;
+    background-color: #fff;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-nav .dropdown .dropdown-toggle:focus,
+.navbar-default .navbar-nav .dropdown .dropdown-toggle:hover {
+
+    background-color: transparent;
+    color: #fff !important;
+}
+
+.dropdown .dropdown-menu:focus,
+.dropdown .dropdown-menu:hover,
+{
+    background-color: transparent;
+    opacity: 0;
+}
+
+.dropdown .dropdown-menu li a:hover,
+.dropdown .dropdown-menu li.active a {
+    color: #000 !important
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.navbar-nav a:before {
+    content: "";
+    background: black;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    border-radius: 5px;
+    transform: scaleX(0);
+    animation: 1.0s forwards no-hover-v linear;
+    animation-fill-mode: forwards;
+    z-index: -1;
+}
+
+.dropdown .dropdown-menu a:before {
+    background: initial;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    border-radius: 5px;
+}
+
+a:hover:before,
+a:focus:before {
+    animation: 0.5s forwards hover-v linear;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes hover-v {
+    0% {
+        transform: scaleX(0);
+        height: 5px;
+    }
+    45% {
+        transform: scaleX(1.05);
+        height: 5px;
+    }
+    55% {
+        height: 5px;
+    }
+    100% {
+        transform: scaleX(1.05);
+        height: 3.8rem;
+    }
+}
+
+@keyframes no-hover-v {
+    0% {
+        transform: scaleX(1.05);
+        height: 3.8rem;
+    }
+    45% {
+        height: 5px;
+    }
+    55% {
+        transform: scaleX(1.05);
+        height: 5px;
+        opacity: 1;
+    }
+
+    100% {
+        transform: scaleX(0);
+        height: 5px;
+        opacity: .02;
+    }
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+html, body {
+    height: 100%;
+    margin: 0;
+    position: relative;
+    background: #222;
+    font-family: "Open Sans";
+    padding: 0;
+    width: 100%;
+}
+
+#wrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.container p {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: rgba(255, 255, 255, .5);
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.ball {
+    pointer-events: none;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: gray;
+    animation: implode 1s ease-in-out;
+    animation-fill-mode: both;
+    opacity: .5;
+}
+
+@keyframes implode {
+    100% {
+        transform: scale(0)
+    }
+}
+
+svg {
+    background: url('https://drive.google.com/uc?export=view&id=1M9BegzynTna0Tc7z2aAfum60VVCS4oTy');
+
+    background-size: cover;
+    width: 40Vmin;
+    height: auto;
+    display: block;
+    margin: 40px auto;
+}
+
+text {
+    font-size: 10px;
+    transition: font-size .5s ease-out;
+    font-weight: 900;
+    font-family: arial;
+}
+
+svg:hover text {
+    transition: font-size .5s ease-in;
+    font-size: 300px;
+}
+
+.bg-grey {
+    background-color: #ffffff
+}
+
+.social-icons {
+    width: 350px;
+    display: block;
+    margin: 0 auto;
+}
+
+.col-sm-6 p {
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 17px;
+    padding: 3px;
+}
+
+.col-sm-3 a {
+    font-weight: bold;
+    color: #000;
+    font-size: 18px
+}
+
+.col-sm-3 p {
+    font-weight: bold;
+    color: #000;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.col-sm-3 a:hover {
+    color: #ff8a65
+}
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+h4 {
+    margin: 1% 0 1% 0;
+}
+
+._14 {
+    font-size: 1.4em;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+.social-icon {
+    color: #000;
+}
+.fa {
+    font-size:30px;
+}
+ul.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+
+.social-icons a {
+    color: #000;
+    text-decoration: none;
+}
+
+.fa-google {
+    padding: 10px 14px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    background-color: #fff;
+}
+
+.fa-google:hover {
+    background-color: #ff8a65;
+    color: #fff;
+}
+
+.fa-instagram {
+    padding: 10px 14px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    background-color: #fff;
+}
+
+.fa-instagram:hover {
+    background-color: #fc9;
+    color: #fff;
+}
+
+
+.fa-github {
+    padding: 10px 14px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    background-color: #fff;
+}
+
+.fa-github:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.fa-linkedin {
+    padding: 10px 14px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    background-color: #fff;
+}
+
+.fa-linkedin:hover {
+    background-color: #0073a4;
+    color: #fff;
+}

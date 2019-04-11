@@ -1,0 +1,302 @@
+.navbar {
+    margin-bottom: 0;
+    background-color: #fff;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    cursor: pointer;
+}
+.navbar-nav li.active a{
+    color: #000000; !important;
+    background-color: transparent; !important;
+}
+.navbar-nav li a:hover{
+    color: #fff !important;
+    background-color: #fff !important;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active
+>a:hover{
+    background: transparent;
+}
+.navbar-default .navbar-nav .dropdown .dropdown-toggle:focus,
+.navbar-default .navbar-nav .dropdown .dropdown-toggle:hover {
+
+   background-color: transparent;
+    color: #fff !important;
+}
+
+.dropdown .dropdown-menu:focus,
+.dropdown .dropdown-menu:hover,
+{
+    background-color: transparent;
+    opacity: 0;
+}
+
+.dropdown .dropdown-menu li a:hover,
+.dropdown .dropdown-menu li.active a {
+    color: #000 !important
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.3); !important;
+    z-index: 1;
+}
+
+.navbar-nav a:before {
+    content: "";
+    background: black;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    border-radius: 5px;
+    transform: scaleX(0);
+    animation: 1.0s forwards no-hover-v linear;
+    animation-fill-mode: forwards;
+    z-index: -1;
+}
+
+.dropdown .dropdown-menu a:before {
+    background: initial;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    border-radius: 5px;
+}
+
+a:hover:before,
+a:focus:before {
+    animation: 0.5s forwards hover-v linear;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes hover-v {
+    0% {
+        transform: scaleX(0);
+        height: 5px;
+    }
+    45% {
+        transform: scaleX(1.05);
+        height: 5px;
+    }
+    55% {
+        height: 5px;
+    }
+    100% {
+        transform: scaleX(1.05);
+        height: 3.8rem;
+    }
+}
+
+@keyframes no-hover-v {
+    0% {
+        transform: scaleX(1.05);
+        height: 3.8rem;
+    }
+    45% {
+        height: 5px;
+    }
+    55% {
+        transform: scaleX(1.05);
+        height: 5px;
+        opacity: 1;
+    }
+
+    100% {
+        transform: scaleX(0);
+        height: 5px;
+        opacity: .02;
+    }
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+html, body {
+    height: 100%;
+    margin: 0;
+    position: relative;
+    background: #222;
+    font-family: "Open Sans";
+    padding: 0;
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+    color:#ffffff;
+}
+h2{
+    color: #FFDAB9;
+    margin-left: 60px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: underline;
+    font-weight:bold;
+    font-family: "Open Sans";
+}
+h3{
+    color: #FFDAB9;
+    margin-left: 60px;
+    text-transform: uppercase;
+    font-family: "Open Sans";
+}
+.pic img{
+    border-radius: 8px;
+    width:500px;
+    height:350px;
+}
+
+
+.name p{
+    color:#FFE4E1;
+    margin-left: 60px;
+    font-size:22px;
+    font-family: "Open Sans";
+}
+.stack p{
+    color: #ffffff;
+    word-spacing: 3px;
+    margin-left: 60px;
+    font-size:22px;
+    font-family: "Open Sans";
+}
+.bg-grey {
+    background-color: #ffffff
+}
+
+.social-icons {
+    width: 350px;
+    display: block;
+    margin: 0 auto;
+}
+
+.col-sm-6 p {
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 17px;
+    padding: 3px;
+}
+
+.col-sm-3 a {
+    font-weight: bold;
+    color: #000;
+    font-size: 18px
+}
+
+.col-sm-3 p {
+    font-weight: bold;
+    color: #000;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.col-sm-3 a:hover {
+    color: #ff8a65
+}
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+h4 {
+    margin: 1% 0 1% 0;
+}
+
+._14 {
+    font-size: 1.4em;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+.social-icon {
+    color: #000;
+}
+
+ul.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+
+.social-icons a {
+    color: #000;
+    text-decoration: none;
+}
+.fa{
+    font-size:30px;
+}
+
+.fa-google {
+    padding: 10px 14px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    background-color: #fff;
+}
+
+.fa-google:hover {
+    background-color: #ff8a65;
+    color: #fff;
+}
+
+.fa-instagram {
+    padding: 10px 14px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    background-color: #fff;
+}
+
+.fa-instagram:hover {
+    background-color: #fc9;
+    color: #fff;
+}
+
+
+.fa-github {
+    padding: 10px 14px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    background-color: #fff;
+}
+
+.fa-github:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.fa-linkedin {
+    padding: 10px 14px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    background-color: #fff;
+}
+
+.fa-linkedin:hover {
+    background-color: #0073a4;
+    color: #fff;
+}
